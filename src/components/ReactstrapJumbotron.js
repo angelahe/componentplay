@@ -7,16 +7,7 @@ import {
   Button
 } from 'reactstrap';
 
-class AppJumbotron extends React.Component {
-  constructor(props) {
-      super(props);
-
-      this.state = {
-          isOpen: false
-      };
-  }
-
-  render() {
+  const ReactstrapJumbotron = (props) => {
     return (
       <div>
        <Jumbotron>
@@ -42,6 +33,5 @@ class AppJumbotron extends React.Component {
       </div>
     );
   }
-}
   
-export default AppJumbotron;
+export default ReactstrapJumbotron;

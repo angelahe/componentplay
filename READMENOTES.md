@@ -7,6 +7,7 @@ npx create-react-app componentplay
 npm install bootstrap --save-dev
 npm install reactstrap --save-dev
 npm install @popperjs/core
+npm install classnames --save-dev
 ```
 ## library use
 ```
@@ -21,6 +22,10 @@ https://blog.bitsrc.io/12-react-ui-layout-grid-components-and-libraries-for-2019
 https://bit.dev/
 https://www.markpollmann.com/styling-react
 https://glenmaddern.com/articles/css-modules
+https://www.npmjs.com/package/classnames#usage-with-reactjs
+https://www.digitalocean.com/community/tutorials/how-to-create-wrapper-components-in-react-with-props
+https://reactjs.org/docs/faq-styling.html
+https://www.digitalocean.com/community/tutorials/how-to-create-wrapper-components-in-react-with-props
 
 ## css in js
 ```
@@ -39,7 +44,72 @@ const MyWrapper = styled.div`
     )
   }
 ...
+
 ```
+## dynamic classes using classnames (and not)
+```
+render() {
+  let className = 'menu';
+  if (this.props.isActive) {
+    className += ' menu-active';
+  }
+  return <span className={className}>Menu</span>
+}
+
+var Button = React.createClass({
+  // ...
+  render () {
+    var btnClass = 'btn';
+    if (this.state.isPressed) btnClass += ' btn-pressed';
+    else if (this.state.isHovered) btnClass += ' btn-over';
+    return <button className={btnClass}>{this.props.label}</button>;
+  }
+});
+
+var classNames = require('classnames');
+ 
+var Button = React.createClass({
+  // ...
+  render () {
+    var btnClass = classNames({
+      btn: true,
+      'btn-pressed': this.state.isPressed,
+      'btn-over': !this.state.isPressed && this.state.isHovered
+    });
+    return <button className={btnClass}>{this.props.label}</button>;
+  }
+});
+
+var btnClass = classNames('btn', this.props.className, {
+  'btn-pressed': this.state.isPressed,
+  'btn-over': !this.state.isPressed && this.state.isHovered
+});
+
+```
+
+example submit button
+```
+/* components/submit-button.js */
+import { Component } from 'react';
+import classNames from 'classnames/bind';
+import styles from './submit-button.css';
+ 
+let cx = classNames.bind(styles);
+ 
+export default class SubmitButton extends Component {
+  render () {
+    let text = this.props.store.submissionInProgress ? 'Processing...' : 'Submit';
+    let className = cx({
+      base: true,
+      inProgress: this.props.store.submissionInProgress,
+      error: this.props.store.errorOccurred,
+      disabled: this.props.form.valid,
+    });
+    return <button className={className}>{text}</button>;
+  }
+};
+```
+
 ## basic styles
 https://reactstrap.github.io/components/alerts/
 

@@ -7,7 +7,7 @@ import { Collapse,
   NavItem,
   NavLink } from 'reactstrap';
 
-  class AppNavbar extends React.Component {
+  class ReactstrapNavbar extends React.Component {
     constructor(props) {
         super(props);
 
@@ -44,4 +44,4 @@ import { Collapse,
     }
   }
     
-  export default AppNavbar;
+  export default ReactstrapNavbar;

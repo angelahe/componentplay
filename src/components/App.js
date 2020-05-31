@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
-import AppNavbar from './AppNavbar';
-import AppJumbotron from './AppJumbotron';
+import ReactstrapNavbar from './ReactstrapNavbar';
+import ReactstrapJumbotron from './ReactstrapJumbotron';
+import ReactstrapAlerts from './ReactstrapAlerts';
+import ReactstrapBadge from './ReactstrapBadge';
+import ReactstrapBreadcrumbs from './ReactstrapBreadcrumbs';
 
 class App extends Component {
     constructor(props) {
@@ -20,8 +23,11 @@ class App extends Component {
     render() {
         return (
           <div>
-            <AppNavbar />
-            <AppJumbotron />
+            <ReactstrapNavbar />
+            <ReactstrapJumbotron />
+            <ReactstrapAlerts />
+            <ReactstrapBadge />
+            <ReactstrapBreadcrumbs />
           </div>
         );
     }
