@@ -16,7 +16,30 @@ import { Button } from 'reactstrap';
 
 ## further reading
 https://reactstrap.github.io/
+https://mdbootstrap.com/docs/react/utilities/flexbox/
+https://blog.bitsrc.io/12-react-ui-layout-grid-components-and-libraries-for-2019-16e8aa5d0b08
+https://bit.dev/
+https://www.markpollmann.com/styling-react
+https://glenmaddern.com/articles/css-modules
 
+## css in js
+```
+import styled from 'styled-components;
+const MyWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+`;
+...
+  render() {
+    return (
+      <MyWrapper>
+        <h1>Hi there</h1>
+        <p>We are centered</p>
+      </MyWrapper>
+    )
+  }
+...
+```
 ## basic styles
 https://reactstrap.github.io/components/alerts/
 
