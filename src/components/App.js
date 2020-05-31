@@ -4,6 +4,9 @@ import ReactstrapJumbotron from './ReactstrapJumbotron';
 import ReactstrapAlerts from './ReactstrapAlerts';
 import ReactstrapBadge from './ReactstrapBadge';
 import ReactstrapBreadcrumbs from './ReactstrapBreadcrumbs';
+import ReactstrapBtnDropdown from './ReactstrapBtnDropdown';
+import ReactstrapBtnGroup from './ReactstrapBtnGroup';
+import ReactstrapBtn from './ReactstrapBtn';
 
 class App extends Component {
     constructor(props) {
@@ -28,6 +31,10 @@ class App extends Component {
             <ReactstrapAlerts />
             <ReactstrapBadge />
             <ReactstrapBreadcrumbs />
+            <ReactstrapBtnDropdown />
+            <ReactstrapBtnGroup />
+            <ReactstrapBtn />
+            
           </div>
         );
     }
