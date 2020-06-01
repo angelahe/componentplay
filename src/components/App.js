@@ -15,6 +15,17 @@ import ReactstrapFade from './ReactstrapFade';
 import ReactstrapForm from './ReactstrapForm';
 import ReactstrapInputGroup from './ReactstrapInputGroup';
 import ReactstrapLayout from './ReactstrapLayout';
+import ReactstrapListGroup from './ReactstrapListGroup';
+import ReactstrapMedia from './ReactstrapMedia';
+import ReactstrapModal from './ReactstrapModals';
+import ReactstrapNavs from './ReactstrapNavs';
+import ReactstrapPagination from './ReactstrapPagination';
+import ReactstrapPopovers from './ReactstrapPopovers';
+import ReactstrapProgress from './ReactstrapProgress';
+import ReactstrapSpinners from './ReactstrapSpinners';
+import ReactstrapTables from './ReactstrapTables';
+import ReactstrapToasts from './ReactstrapToasts';
+import ReactstrapTooltips from './ReactstrapTooltips';
 
 class App extends Component {
     constructor(props) {
@@ -50,6 +61,18 @@ class App extends Component {
             <ReactstrapForm />
             <ReactstrapInputGroup />
             <ReactstrapLayout />
+            <ReactstrapListGroup />
+            <ReactstrapMedia />
+            <ReactstrapModal />
+            <ReactstrapNavbar />
+            <ReactstrapNavs />
+            <ReactstrapPagination />
+            <ReactstrapPopovers />
+            <ReactstrapProgress />
+            <ReactstrapSpinners />
+            <ReactstrapTables />
+            <ReactstrapToasts />
+            <ReactstrapTooltips />
           </div>
         );
     }
