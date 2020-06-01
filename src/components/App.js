@@ -12,6 +12,9 @@ import ReactstrapCarousel from './ReactstrapCarousel';
 import ReactstrapCollapse from './ReactstrapCollapse';
 import ReactstrapDropdowns from './ReactstrapDropdowns';
 import ReactstrapFade from './ReactstrapFade';
+import ReactstrapForm from './ReactstrapForm';
+import ReactstrapInputGroup from './ReactstrapInputGroup';
+import ReactstrapLayout from './ReactstrapLayout';
 
 class App extends Component {
     constructor(props) {
@@ -44,7 +47,9 @@ class App extends Component {
             <ReactstrapCollapse />
             <ReactstrapDropdowns />
             <ReactstrapFade />
-
+            <ReactstrapForm />
+            <ReactstrapInputGroup />
+            <ReactstrapLayout />
           </div>
         );
     }

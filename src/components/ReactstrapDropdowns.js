@@ -7,7 +7,6 @@ const ReactstrapDropdowns = (props) => {
   const toggle = () => setDropdownOpen(prevState => !prevState);
 
   return (
-    <div>
       <Dropdown isOpen={dropdownOpen} toggle={toggle}>
         <DropdownToggle caret>
           Dropdown
@@ -22,21 +21,6 @@ const ReactstrapDropdowns = (props) => {
           <DropdownItem>Quo Action</DropdownItem>
         </DropdownMenu>
       </Dropdown>
-    
-      <Dropdown isOpen={this.state.dropdownOpen} toggle={this.toggle}>
-        <DropdownToggle caret>
-          Dropdown's menu is right-aligned
-        </DropdownToggle>
-        <DropdownMenu right>
-          <DropdownItem header>Header</DropdownItem>
-          <DropdownItem disabled>Action</DropdownItem>
-          <DropdownItem>Another Action</DropdownItem>
-          <DropdownItem divider/>
-          <DropdownItem>Another Really Really Long Action (Really!)</DropdownItem>
-        </DropdownMenu>
-      </Dropdown>
-
-    </div>
   );
 }
 
