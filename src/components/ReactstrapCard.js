@@ -1,14 +1,16 @@
 import React from 'react';
 import {
   Card, CardImg, CardText, CardBody,
-  CardTitle, CardSubtitle, Button
+  CardTitle, CardSubtitle, Button, Row, Col
 } from 'reactstrap';
+import logo from '../img/OneLogo.svg';
 
 const ReactstrapCard = (props) => {
   return (
     <div>
+      <Row>
       <Card>
-        <CardImg top width="100%" src="/assets/318x180.svg" alt="Card image cap" />
+        <CardImg top width="20%" src={logo} alt="Card image cap" />
         <CardBody>
           <CardTitle>Card title</CardTitle>
           <CardSubtitle>Card subtitle</CardSubtitle>
@@ -16,6 +18,23 @@ const ReactstrapCard = (props) => {
           <Button>Button</Button>
         </CardBody>
       </Card>
+      </Row>
+      <Row>
+      <Col sm="6">
+        <Card body>
+          <CardTitle>Special Title Treatment</CardTitle>
+          <CardText>With supporting text below as a natural lead-in to additional content.</CardText>
+          <Button>Go somewhere</Button>
+        </Card>
+      </Col>
+      <Col sm="6">
+        <Card body>
+          <CardTitle>Special Title Treatment</CardTitle>
+          <CardText>With supporting text below as a natural lead-in to additional content.</CardText>
+          <Button>Go somewhere</Button>
+        </Card>
+      </Col>
+    </Row>
     </div>
   );
 };

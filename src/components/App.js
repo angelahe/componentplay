@@ -7,6 +7,7 @@ import ReactstrapBreadcrumbs from './ReactstrapBreadcrumbs';
 import ReactstrapBtnDropdown from './ReactstrapBtnDropdown';
 import ReactstrapBtnGroup from './ReactstrapBtnGroup';
 import ReactstrapBtn from './ReactstrapBtn';
+import ReactstrapCard from './ReactstrapCard';
 
 class App extends Component {
     constructor(props) {
@@ -34,7 +35,8 @@ class App extends Component {
             <ReactstrapBtnDropdown />
             <ReactstrapBtnGroup />
             <ReactstrapBtn />
-            
+            <ReactstrapCard />
+
           </div>
         );
     }

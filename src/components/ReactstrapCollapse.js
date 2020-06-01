@@ -24,3 +24,18 @@ const ReactstrapCollapse = (props) => {
 }
 
 export default ReactstrapCollapse;
+/*
+Collapse.propTypes = {
+  ...Transition.propTypes, // see note below
+  isOpen: PropTypes.bool,
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.node),
+    PropTypes.node
+  ]),
+  tag: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
+  className: PropTypes.node,
+  navbar: PropTypes.bool,
+  cssModule: PropTypes.object,
+  innerRef: PropTypes.object,
+};
+*/
