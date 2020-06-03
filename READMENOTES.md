@@ -18,6 +18,7 @@ import { Button } from 'reactstrap';
 ## further reading
 https://reactstrap.github.io/
 https://mdbootstrap.com/docs/react/utilities/flexbox/
+https://medium.com/better-programming/make-a-flexbox-react-component-e96a038da7ec
 https://blog.bitsrc.io/12-react-ui-layout-grid-components-and-libraries-for-2019-16e8aa5d0b08
 https://bit.dev/
 https://www.markpollmann.com/styling-react
