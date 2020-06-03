@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Flex = (props) => (
+export const Flex = (props) => (
   <div
     className={props.className}
     style={{
@@ -23,5 +23,3 @@ const Flex = (props) => (
     {props.children}
   </div>
 )
-
-export default Flex;

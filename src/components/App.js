@@ -27,6 +27,7 @@ import ReactstrapTables from './ReactstrapTables';
 import ReactstrapToasts from './ReactstrapToasts';
 import ReactstrapTooltips from './ReactstrapTooltips';
 import FlexboxPage from './FlexboxPage';
+import PathToFlexUsed from './PathToFlexUsed';
 
 class App extends Component {
     constructor(props) {
@@ -75,6 +76,7 @@ class App extends Component {
             <ReactstrapToasts />
             <ReactstrapTooltips />
             <FlexboxPage />
+            <PathToFlexUsed />
           </div>
         );
     }
